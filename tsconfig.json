@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "outDir": ".leetcode/compile",
+        "sourceMap": true
+    },
+    "include": [".leetcode/**/*"]
+}
