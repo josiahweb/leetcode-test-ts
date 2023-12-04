@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="intellectmoney-payform">
+        <script async
+            type="text/javascript">fetch('https://merch.intellectmoney.ru/payform/?EshopId=466215&ServiceNameAuthor=0&ServiceName=vsgameskins&PaymentAmountIsReadonly=false&PaymentAmount=10&PaymentCurrency=%E2%82%BD&ButtonName=0&Preferences=&PayerData=&Comment=&CommentTip=&UserEmail=true&UserFullName=&PhoneNumber=&SuccessUrl=https%3A%2F%2Ftest.vsgameskins.com%2Findex&OpenNewWindow=true&MerchantReceipt=%7B%22Content%22%3A%7B%22Type%22%3A1%2C%22Positions%22%3A%5B%5D%7D%7D').then(res => res.text()).then((responseText) => { const c = document.getElementById('intellectmoney-payform'); c.innerHTML = responseText; Array.prototype.slice.call(new DOMParser().parseFromString(responseText, 'text/html').getElementsByTagName('script')).forEach(s => { let e = document.createElement('script'); e.src = s.src; e.type = s.type; c.appendChild(e) }) })</script>
+    </div>
+</body>
+
+</html>
